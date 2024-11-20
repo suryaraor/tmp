@@ -9,3 +9,42 @@ For the business tickets, the team confirmed they will be defaulting the GFCID a
 The team discussed options for handling the floating rate loan contracts where the next reset date is not available on the contract reset date. They agreed to create a provisional ticket on the reset date using the previous rate, and then reverse it the next day when the new rate is available.
 
 The team decided to test the end-of-day process in the UAT environment by creating sample assignments and portfolios, before implementing the changes in production.
+
+
+Here is a high-level summary of the key discussion points:
+
+GRU SLA and Loan IQ Approval:
+
+   - Discussions around the GRU SLA and the need to finalize it for the remaining countries.
+   - Talks about the conditional approval for the Loan IQ process and the need to review the BRT process.
+
+Ownership and Migration Plan for GRU:
+
+   - Discussions on the ownership of the two-way and three-way reconciliation records.
+   - Proposal to include GRU in the onboarding exercise to streamline the migration process.
+
+Business Tickets and Data Quality:
+
+   - Decision to default the GFCID and CRGID fields on business tickets instead of sending null.
+   - Discussions around the logic for handling business tickets and the potential impact on high-volume transactions.
+
+Floating Rate Contracts and Ticket Creation:
+
+   - Challenges in creating tickets for floating rate contracts due to the availability of the next reset date.
+   - Proposal to create provisional tickets and reverse them the next day if necessary.
+   - Plan to analyze the data quality for specific geographies and products.
+
+Model ID and Data Migration Issues:
+
+   - Concerns raised about the use of dynamic model IDs causing issues during data migration.
+   - Plan to use the static model ID instead and potentially apply a data patch to fix the issue.
+
+Day Zero and Day One Testing:
+
+   - Discussions around the plan for testing the new setup, including intraday processing and GRE record feed.
+   - Emphasis on validating the data in the full suite to ensure proper loading and accuracy.
+
+Assignment and Portfolio Configuration:
+
+   - Discussions on the configuration of assignments and portfolios, focusing on segment and geography levels.
+   - Aim to optimize the number of assignments to manage the data effectively.
