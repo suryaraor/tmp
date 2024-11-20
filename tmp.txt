@@ -1,0 +1,11 @@
+Based on the conversation context, here are the key decisions that were made:
+
+For the GRU SLA, it was decided to use the same local time (6:30 PM) for the remaining two countries (Italy and France) as was used for the three countries (Ireland, London, and Italy) where the SLA was already finalized.
+
+The team agreed to include the GRU feed in the onboarding exercise for new countries, at least for the two-way reconciliation where the ownership is defined with Olympus.
+
+For the business tickets, the team confirmed they will be defaulting the GFCID and CRGID fields instead of sending null values, following the same logic as for the Treasury tickets.
+
+The team discussed options for handling the floating rate loan contracts where the next reset date is not available on the contract reset date. They agreed to create a provisional ticket on the reset date using the previous rate, and then reverse it the next day when the new rate is available.
+
+The team decided to test the end-of-day process in the UAT environment by creating sample assignments and portfolios, before implementing the changes in production.
